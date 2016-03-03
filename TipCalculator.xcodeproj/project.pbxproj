@@ -11,6 +11,8 @@
 		0F24F7EF1C85FEA300DDD2F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F24F7ED1C85FEA300DDD2F4 /* Main.storyboard */; };
 		0F24F7F11C85FEA300DDD2F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F24F7F01C85FEA300DDD2F4 /* Assets.xcassets */; };
 		0F24F7F41C85FEA300DDD2F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F24F7F21C85FEA300DDD2F4 /* LaunchScreen.storyboard */; };
+		0F600A5A1C868F5A008DB5BA /* TipController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F600A591C868F5A008DB5BA /* TipController.swift */; };
+		0FD352371C87A0FA003642B2 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD352361C87A0FA003642B2 /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		0F24F7F01C85FEA300DDD2F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F24F7F31C85FEA300DDD2F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F24F7F51C85FEA300DDD2F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F600A591C868F5A008DB5BA /* TipController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipController.swift; sourceTree = "<group>"; };
+		0FD352361C87A0FA003642B2 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				0F24F7E91C85FEA300DDD2F4 /* AppDelegate.swift */,
 				0F24F7ED1C85FEA300DDD2F4 /* Main.storyboard */,
+				0FD352361C87A0FA003642B2 /* SettingsController.swift */,
+				0F600A591C868F5A008DB5BA /* TipController.swift */,
 				0F24F7F01C85FEA300DDD2F4 /* Assets.xcassets */,
 				0F24F7F21C85FEA300DDD2F4 /* LaunchScreen.storyboard */,
 				0F24F7F51C85FEA300DDD2F4 /* Info.plist */,
@@ -133,7 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD352371C87A0FA003642B2 /* SettingsController.swift in Sources */,
 				0F24F7EA1C85FEA300DDD2F4 /* AppDelegate.swift in Sources */,
+				0F600A5A1C868F5A008DB5BA /* TipController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +291,7 @@
 				0F24F7FA1C85FEA300DDD2F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
