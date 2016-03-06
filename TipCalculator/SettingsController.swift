@@ -12,5 +12,13 @@ class SettingsController: UIViewController{
     @IBOutlet weak var buttonSave: UIButton!
     @IBOutlet weak var textFieldPercentage: UITextField!
     
+    @IBAction func savePercentage(sender: AnyObject) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(textFieldPercentage.text, forKey: "percentage")  
+    }
+    
+    @IBAction func dismissKeyboard(sender: AnyObject){
+        textFieldPercentage.resignFirstResponder()
+    }
     
 }

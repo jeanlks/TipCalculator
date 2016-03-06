@@ -12,8 +12,12 @@ class TipViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBAction func textFieldChanged(textField: UITextField){
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let percentage = numberFormatter.numberFromString(defaults.stringForKey("percentage")!)
+        
         if let text = textField.text ,number = numberFormatter.numberFromString(text){
-           tipValue = number.doubleValue * 0.15
+           tipValue = number.doubleValue * (percentage!.doubleValue/100)
         }
         else{
             tipLabel.text = nil
@@ -42,6 +46,9 @@ class TipViewController: UIViewController {
         else{
             tipLabel.text = "???"
         }
+    }
+    @IBAction func dismissKeyboard(sender: AnyObject){
+        textField.resignFirstResponder()
     }
     
 
