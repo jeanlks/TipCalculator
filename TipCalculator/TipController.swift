@@ -8,16 +8,18 @@
 
 import UIKit
 class TipViewController: UIViewController {
-    
+    var percentage :NSNumber = 15
+    let defaults = NSUserDefaults.standardUserDefaults()
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
+    
     @IBAction func textFieldChanged(textField: UITextField){
         
-        let defaults = NSUserDefaults.standardUserDefaults()
-        let percentage = numberFormatter.numberFromString(defaults.stringForKey("percentage")!)
-        
+        if(defaults.stringForKey("percentage")?.isEmpty == false){
+        percentage = numberFormatter.numberFromString(defaults.stringForKey("percentage")!)!
+        }
         if let text = textField.text ,number = numberFormatter.numberFromString(text){
-           tipValue = number.doubleValue * (percentage!.doubleValue/100)
+            tipValue = number.doubleValue * (percentage.doubleValue/100)
         }
         else{
             tipLabel.text = nil

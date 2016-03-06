@@ -17,16 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="purplebackground" translatesAutoresizingMaskIntoConstraints="NO" id="PcP-7J-cMG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="551" id="29M-SC-kOb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="XcW-pR-IgB"/>
+                                    <constraint firstAttribute="width" constant="600" id="anp-G8-yPv"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentage of Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb3-LL-G4a">
                                 <rect key="frame" x="232" y="28" width="136" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PL-HS-S3I">
                                 <rect key="frame" x="232" y="94.5" width="136" height="30"/>
                                 <state key="normal" title="Save">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
                                     <action selector="savePercentage:" destination="8gC-Zz-Ohj" eventType="touchUpInside" id="ZBu-ht-bz9"/>
@@ -48,6 +56,8 @@
                             <constraint firstItem="bij-ZS-3lY" firstAttribute="width" secondItem="Cb3-LL-G4a" secondAttribute="width" id="Sq5-2Z-EDR"/>
                             <constraint firstItem="Cb3-LL-G4a" firstAttribute="top" secondItem="iPU-sm-gGh" secondAttribute="bottom" constant="8" id="gXZ-lZ-ufs"/>
                             <constraint firstItem="bij-ZS-3lY" firstAttribute="top" secondItem="Cb3-LL-G4a" secondAttribute="bottom" constant="8" id="kRf-ti-AaB"/>
+                            <constraint firstItem="PcP-7J-cMG" firstAttribute="width" secondItem="Ixs-b8-7Oc" secondAttribute="width" id="sGZ-TF-mtl"/>
+                            <constraint firstItem="PcP-7J-cMG" firstAttribute="height" secondItem="Ixs-b8-7Oc" secondAttribute="height" id="uPy-CF-O1d"/>
                             <constraint firstItem="bij-ZS-3lY" firstAttribute="centerX" secondItem="Cb3-LL-G4a" secondAttribute="centerX" id="vIN-De-uue"/>
                         </constraints>
                         <connections>
@@ -81,10 +91,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="purplebackground" translatesAutoresizingMaskIntoConstraints="NO" id="E48-1X-QDw">
+                                <rect key="frame" x="0.0" y="-8" width="600" height="559"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="559" id="LsC-tK-ivJ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="RF1-Of-NK3"/>
+                                    <constraint firstAttribute="width" constant="600" id="oFT-kq-lwn"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usi-TM-FyF">
                                 <rect key="frame" x="248" y="212" width="103.5" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <color key="textColor" red="0.1529411765" green="0.17254901959999999" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.69756674727313028" green="0.71764705880000002" blue="0.39764663016740809" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="should be " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbp-rQ-HG1">
@@ -105,7 +123,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="VH8-jH-jjg"/>
                                 </constraints>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.69756674730000001" green="0.71764705880000002" blue="0.39764663020000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
                                 <connections>
@@ -123,7 +141,9 @@
                             <constraint firstItem="nbp-rQ-HG1" firstAttribute="top" secondItem="Pqb-Oe-r5c" secondAttribute="bottom" constant="8" id="fhd-bY-MYP"/>
                             <constraint firstItem="Pqb-Oe-r5c" firstAttribute="centerX" secondItem="nbp-rQ-HG1" secondAttribute="centerX" id="hAl-H9-pef"/>
                             <constraint firstItem="hqe-40-0K4" firstAttribute="centerX" secondItem="nbp-rQ-HG1" secondAttribute="centerX" id="lOk-s4-kqk"/>
+                            <constraint firstItem="E48-1X-QDw" firstAttribute="height" secondItem="251-f1-2Wa" secondAttribute="height" id="qd9-br-qcL"/>
                             <constraint firstItem="hqe-40-0K4" firstAttribute="top" secondItem="Usi-TM-FyF" secondAttribute="bottom" constant="8" id="yqf-jl-Oaa"/>
+                            <constraint firstItem="E48-1X-QDw" firstAttribute="width" secondItem="251-f1-2Wa" secondAttribute="width" id="zUw-sQ-Gmr"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="TbO-ku-HRu" appends="YES" id="pGf-us-cgh"/>
@@ -142,7 +162,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="466.5" y="750.75"/>
+            <point key="canvasLocation" x="466" y="750"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="iym-B9-Apx">
@@ -166,5 +186,6 @@
     <resources>
         <image name="gear-7" width="30" height="30"/>
         <image name="percent-decor-7" width="30" height="30"/>
+        <image name="purplebackground" width="624" height="444"/>
     </resources>
 </document>
